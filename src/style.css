@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#app {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 80%;
+  max-width: auto;
+  min-height: 125vh;
+  background: white;
+  padding: 20px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#logout-button {
+  background: #dc3545;
+}
+
+#logout-button:hover {
+  background: #a71d2a;
+}
+
+#todo {
+  width: 100%;
+  height: 80vh;
+}
+
+#tasks-container {
+  display: flex;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.tasks-column {
+  width: 48%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.tasks-column h3 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.delete-button {
+  background: #dc3545;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.delete-button:hover {
+  background: #a71d2a;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+li.completed {
+  background: #e0ffe0;
+  border-color: #00b300;
+}

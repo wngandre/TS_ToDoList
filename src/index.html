@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="auth">
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username" />
+        <input type="password" id="register-password" placeholder="Password" />
+        <button onclick="register()">Register</button>
+
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+      </div>
+
+      <div id="todo" style="display: none">
+        <h2>To-Do List</h2>
+        <button id="logout-button" onclick="logout()">Logout</button>
+        <button
+          class="reset"
+          id="reset-localstorage"
+          onclick="resetLocalStorage()"
+        >
+          Réinitialiser le localStorage
+        </button>
+        <h3>Task title</h3>
+        <input type="text" id="task-title" placeholder="Title" required />
+        <h3>Task description</h3>
+        <input
+          type="text"
+          id="task-description"
+          placeholder="Description"
+          required
+        />
+        <h3>Task deadline</h3>
+        <input type="date" id="task-deadline" required />
+        <button onclick="addTask()">Add Task</button>
+
+        <div id="tasks-container">
+          <div class="tasks-column">
+            <h3>Tasks To Do</h3>
+            <ul id="tasks-todo"></ul>
+          </div>
+          <div class="tasks-column">
+            <h3>Completed Tasks</h3>
+            <ul id="tasks-completed"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/lib/app.js"></script>
+  </body>
+</html>

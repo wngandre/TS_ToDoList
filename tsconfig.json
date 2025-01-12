@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "ES2021",
+    "noEmitOnError": false,
+    "strict": true
+  },
+  "include": ["src/**/*.ts"]
+}
